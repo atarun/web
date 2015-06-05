@@ -26,7 +26,7 @@ abstract class Controller_Hybrid extends \Controller_Rest
 	/**
 	* @var string page template
 	*/
-	public $template = 'template';
+	public $template = 'layout';
 
 	/**
 	 * Load the template and create the $this->template object if needed
