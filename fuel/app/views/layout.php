@@ -1,9 +1,9 @@
 <!DDCTYPE>
 <html>
 	<head>
-		<title><?php echo $title; ?></title>
+		<title><? echo $title; ?></title>
 	</head>
 	<body>
-		<?php echo $content; ?>
+		<? echo $content; ?>
 	</body>
 </html>
