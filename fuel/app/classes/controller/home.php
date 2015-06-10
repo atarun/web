@@ -1,7 +1,6 @@
 <?php
-use Fuel\Core\Controller_Hybrid;
 
-class Controller_Home extends Controller_Hybrid
+class Controller_Home extends Controller_Abstruct
 {
 	public function before() {
 		parent::before();
@@ -13,6 +12,7 @@ class Controller_Home extends Controller_Hybrid
 	}
 	
 	public function action_index() {
+		$this->template->content = View::forge('home/index');
 // 		var_dump("hoge");
 // 		return Response::forge(View::forge('home/index'));
 	}

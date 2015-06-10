@@ -1,10 +1,11 @@
 <?php
 use Fuel\Core\Controller_Hybrid;
 
-class Controller_Layout extends Controller_Hybrid
+class Controller_Abstruct extends Controller_Hybrid
 {
 	public function before() {
 		parent::before();
+		$this->template->title = "タイトル";
 	}
 	
 	public function after($response) {
@@ -13,8 +14,6 @@ class Controller_Layout extends Controller_Hybrid
 	}
 	
 	public function action_index() {
-		$thie->template->title = "タイトル";
-		$this->template->content = "hoge";
 // 		$this->template->content = View::forge('layout/layout');
 	}
 }
