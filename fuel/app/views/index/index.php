@@ -95,37 +95,12 @@
 		</div>
 	</section>
 
-	<!-- Resume Section -->
-	<section id="resume" class="four">
-		<div class="container">
-			<header>
-				<h2>Work</h2>
-			</header>
-			
-			<div class="nine columns main-col">
-				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-				eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-				voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-				voluptatem sequi nesciunt.
-				</p>
-				<div class="bars">
-					<ul class="skills">
-						<li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-						<li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-						<li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	
 	<!-- Contact -->
-	<section id="contact" class="five">
+	<section id="contact" class="four">
+		<div class="container">
+
 			<header>
-				<h2><span>Contact</span></h2>
+				<h2>Contact</h2>
 			</header>
 
 			<p>Elementum sem parturient nulla quam placerat viverra
