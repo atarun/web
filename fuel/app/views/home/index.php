@@ -95,11 +95,11 @@
 		</div>
 	</section>
 
-	<!-- Resume Section -->
-	<section id="resume" class="four">
+	<!-- Skill -->
+	<section id="skill" class="four">
 		<div class="container">
 			<header>
-				<h2>Work</h2>
+				<h2>Skill</h2>
 			</header>
 			
 			<div class="nine columns main-col">
@@ -122,8 +122,22 @@
 		</div>
 	</section>
 	
+	<!-- Work -->
+	<section id="work" class="five">
+		<div class="container">
+			<header>
+				<h2>Work</h2>
+			</header>
+			
+			<dl>
+				<dt>Cocos2d-JS</dt>
+				<dd><a href="/dev/Cocos2dJS/HelloWorld/">HelloWorld</a></dd>
+			</dl>
+		</div>
+	</section>
+	
 	<!-- Contact -->
-	<section id="contact" class="five">
+	<section id="contact" class="nine">
 			<header>
 				<h2><span>Contact</span></h2>
 			</header>
