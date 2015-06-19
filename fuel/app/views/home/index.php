@@ -109,14 +109,18 @@
 				voluptatem sequi nesciunt.
 				</p>
 				<div class="bars">
-					<ul class="skills">
-						<li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-						<li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-						<li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
+					<dl class="skills">
+						<dt><span class="bar-expand html"></span><em>HTML</em></dt>
+						<dd>HTML5</dd>
+						<dt><span class="bar-expand css"></span><em>CSS</em></dt>
+						<dd>CSS3</dd>
+						<dt><span class="bar-expand javascript"></span><em>JavaScript</em></dt>
+						<dd>jQuery</dd>
+						<dt><span class="bar-expand php"></span><em>PHP</em></dt>
+						<dd>FuelPHP,&nbspCake&nbspPHP,&nbspZend&nbspFramework</dd>
+						<dt><span class="bar-expand ios"></span><em>iOS</em></dt>
+						<dd>Objective-C</dd>
+					</dl>
 				</div>
 			</div>
 		</div>
