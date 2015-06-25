@@ -7,8 +7,7 @@
 			<header>
 				<h2 class="alt">Hi! My name is <strong>ATARUN</strong>,<br />
 				My profession is a <strong>SystemEngineer</strong>.</h2>
-				<p>Ligula scelerisque justo sem accumsan diam quis<br />
-				vitae natoque dictum sollicitudin elementum.</p>
+				<p>I am japanese.</p>
 			</header>
 			<footer>
 				<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
