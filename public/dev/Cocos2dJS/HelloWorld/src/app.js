@@ -6,10 +6,7 @@ var HelloWorldLayer = cc.Layer.extend({
         // 1. super init first
         this._super();
 
-        /////////////////////////////
-        // 2. add a menu item with "X" image, which is clicked to quit the program
-        //    you may modify it.
-        // ask the window size
+        // ウィンドウサイズの取得
         var size = cc.winSize;
 
         // add a "close" icon to exit the progress. it's an autorelease object
@@ -20,8 +17,8 @@ var HelloWorldLayer = cc.Layer.extend({
                 cc.log("Menu is clicked!");
             }, this);
         closeItem.attr({
-            x: size.width - 20,
-            y: 20,
+            x: size.width - 40,
+            y: 40,
             anchorX: 0.5,
             anchorY: 0.5
         });
@@ -74,27 +71,53 @@ var HelloWorldScene = cc.Scene.extend({
         var layer = new HelloWorldLayer();
         this.addChild(layer);
 
+        var touchSprite = new TouchableSprite();
+        this.addChild(touchSprite);
+
+//        var menu = new cc.Menu(removeAllTouchItem);
+//        menu.setPosition(0, 0);
+//        menu.setAnchorPoint(0, 0);
+//        this.addChild(menu);
+        //----end0----
+    },
+
+    title:function(){
+        return "Touchable Sprite Test";
+    },
+
+    subtitle:function(){
+        return "Please drag the blocks";
+    }
+});
+
+var TouchableSprite = cc.Sprite.extend({
+    onEnter:function() {
+        this._super();
         /*--------------------
          * TouchEvent Test
          *--------------------*/
-        var origin = cc.director.getVisibleOrigin();
-        var size = cc.director.getVisibleSize();
+
+        // 描画領域の原点座標
+        var origin  = cc.director.getVisibleOrigin();
+
+        // 描画領域のサイズ
+        var size    = cc.director.getVisibleSize();
 
         // SpriteCyan
         var containerForSpriteCyan = new cc.Node();
         var spriteCyan = new cc.Sprite(res.Img_SquareCyan_png);
-        spriteCyan.setPosition(origin.x + size.width/2 - 80, origin.y + size.height/2 + 80);
+        spriteCyan.setPosition(origin.x + size.width / 2 - 80, origin.y + size.height / 2 + 80);
         containerForSpriteCyan.addChild(spriteCyan);
         this.addChild(containerForSpriteCyan, 10);
 
         // SpriteMagenta
         var spriteMagenta = new cc.Sprite(res.Img_SquareMagenta_png);
-        spriteMagenta.setPosition(origin.x + size.width/2, origin.y + size.height/2);
+        spriteMagenta.setPosition(origin.x + size.width / 2, origin.y + size.height / 2);
         this.addChild(spriteMagenta, 20);
 
         // SpriteYellow
         var spriteYellow = new cc.Sprite(res.Img_SquareYellow_png);
-        spriteYellow.setPosition(origin.x + size.width/2 + 80, origin.y + size.height/2 - 80);
+        spriteYellow.setPosition(origin.x + size.width / 2 + 80, origin.y + size.height / 2 - 80);
 //        sprite2.addChild(spriteYellow, 1);
         this.addChild(spriteYellow, 1);
 
@@ -139,49 +162,31 @@ var HelloWorldScene = cc.Scene.extend({
         cc.eventManager.addListener(listenerCyan.clone(), spriteYellow);
         var selfPointer = this;
 
-        var removeAllTouchItem = new cc.MenuItemFont("Remove All Touch Listeners", function(senderItem){
-            senderItem.setString("Only Next item could be clicked");
-
-            cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE);
-
-            var nextItem = new cc.MenuItemFont("Next", function(sender){
-                selfPointer.onNextCallback();
-            });
-
-            nextItem.fontSize = 16;
-            nextItem.x = cc.visibleRect.right.x -100;
-            nextItem.y = cc.visibleRect.right.y - 30;
-
-            var menu2 = new cc.Menu(nextItem);
-            menu2.setPosition(0, 0);
-            menu2.setAnchorPoint(0, 0);
-            selfPointer.addChild(menu2);
-        });
-
-        removeAllTouchItem.fontSize = 16;
-        removeAllTouchItem.x = cc.visibleRect.right.x -removeAllTouchItem.width/2-20;
-        removeAllTouchItem.y = cc.visibleRect.right.y;
-
-        var menu = new cc.Menu(removeAllTouchItem);
-        menu.setPosition(0, 0);
-        menu.setAnchorPoint(0, 0);
-        this.addChild(menu);
-        //----end0----
-    },
-
-    title:function(){
-        return "Touchable Sprite Test";
-    },
-
-    subtitle:function(){
-        return "Please drag the blocks";
+//        var removeAllTouchItem = new cc.MenuItemFont("Remove All Touch Listeners", function(senderItem){
+//            senderItem.setString("Only Next item could be clicked");
+//
+//            cc.eventManager.removeListeners(cc.EventListener.TOUCH_ONE_BY_ONE);
+//
+//            var nextItem = new cc.MenuItemFont("Next", function(sender){
+//                selfPointer.onNextCallback();
+//            });
+//
+//            nextItem.fontSize = 16;
+//            nextItem.x = cc.visibleRect.right.x -100;
+//            nextItem.y = cc.visibleRect.right.y - 30;
+//
+//            var menu2 = new cc.Menu(nextItem);
+//            menu2.setPosition(0, 0);
+//            menu2.setAnchorPoint(0, 0);
+//            selfPointer.addChild(menu2);
+//        });
+//
+//        removeAllTouchItem.fontSize = 16;
+//        removeAllTouchItem.x = cc.visibleRect.right.x -removeAllTouchItem.width/2-20;
+//        removeAllTouchItem.y = cc.visibleRect.right.y;
     }
 });
-//
-//var TouchableSpriteTest =  EventDispatcherTestDemo.extend({
-//
-//});
-//
+
 //TouchableSpriteTest.create = function(){
 //    var test = new TouchableSpriteTest();
 //    test.init();
@@ -252,9 +257,3 @@ var HelloWorldScene = cc.Scene.extend({
 //        return this._listener;
 //    }
 //});
-//
-//TouchableSprite.create = function(priority){
-//    var test = new TouchableSprite(priority);
-//    test.init();
-//    return test;
-//};
