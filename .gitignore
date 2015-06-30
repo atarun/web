@@ -35,3 +35,7 @@ fuel/app/logs/
 fuel/app/logs/*/*/*
 fuel/app/cache/*/*
 fuel/app/config/crypt.php
+
+public/phpMyAdmin/
+#public/UNICORN-master/
+_tmp/
