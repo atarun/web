@@ -106,7 +106,7 @@ return array(
 	 * Fuel::L_ALL
 	 */
 	'log_threshold'    => Fuel::L_ALL,
-	'log_path'         => APPPATH.'logs/',
+	'log_path'         => APPPATH.'../../log/',
 	'log_date_format'  => 'Y-m-d H:i:s',
 
 	/**
