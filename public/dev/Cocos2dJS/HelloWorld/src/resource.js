@@ -6,6 +6,7 @@ var res = {
     Img_SquareCyan_png : "res/img/SquareCyan.png",
     Img_SquareMagenta_png : "res/img/SquareMagenta.png",
     Img_SquareYellow_png : "res/img/SquareYellow.png",
+    Img_Player_png : "res/img/player.png",
 };
 
 var g_resources = [];

@@ -134,7 +134,7 @@
 			
 			<dl>
 				<dt>Cocos2d-JS</dt>
-				<dd><a href="/dev/Cocos2dJS/HelloWorld/">HelloWorld</a></dd>
+				<dd><a href="/dev/Cocos2dJS/HelloWorld/" target="__blank">HelloWorld</a></dd>
 			</dl>
 		</div>
 	</section>

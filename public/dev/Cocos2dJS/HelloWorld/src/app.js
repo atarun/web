@@ -103,26 +103,16 @@ var TouchableSprite = cc.Sprite.extend({
         // 描画領域のサイズ
         var size    = cc.director.getVisibleSize();
 
-        // SpriteCyan
-        var containerForSpriteCyan = new cc.Node();
-        var spriteCyan = new cc.Sprite(res.Img_SquareCyan_png);
-        spriteCyan.setPosition(origin.x + size.width / 2 - 80, origin.y + size.height / 2 + 80);
-        containerForSpriteCyan.addChild(spriteCyan);
-        this.addChild(containerForSpriteCyan, 10);
+        // Player
+        var containerForPlayer = new cc.Node();
+        var spritePlayer = new cc.Sprite(res.Img_Player_png);
+        spritePlayer.setPosition(origin.x + size.width / 2, origin.y + size.height / 2);
+        spritePlayer.setScale(0.25);
+        containerForPlayer.addChild(spritePlayer);
+        this.addChild(containerForPlayer, 1);
 
-        // SpriteMagenta
-        var spriteMagenta = new cc.Sprite(res.Img_SquareMagenta_png);
-        spriteMagenta.setPosition(origin.x + size.width / 2, origin.y + size.height / 2);
-        this.addChild(spriteMagenta, 20);
-
-        // SpriteYellow
-        var spriteYellow = new cc.Sprite(res.Img_SquareYellow_png);
-        spriteYellow.setPosition(origin.x + size.width / 2 + 80, origin.y + size.height / 2 - 80);
-//        sprite2.addChild(spriteYellow, 1);
-        this.addChild(spriteYellow, 1);
-
-        // Make spriteCyan touchable
-        var listenerCyan = cc.EventListener.create({
+        // Playerタッチイベント
+        var listenerPlayer = cc.EventListener.create({
             event: cc.EventListener.TOUCH_ONE_BY_ONE,
             swallowTouches: true,
             onTouchBegan: function (touch, event) {
@@ -149,18 +139,100 @@ var TouchableSprite = cc.Sprite.extend({
                 var target = event.getCurrentTarget();
                 cc.log("sprite onTouchesEnded.. ");
                 target.setOpacity(255);
-                if (target == spriteMagenta) {
-                    containerForSpriteCyan.setLocalZOrder(100);
-                } else if (target == spriteCyan) {
-                    containerForSpriteCyan.setLocalZOrder(0);
-                }
+                containerForPlayer.setLocalZOrder(0);
             }
         });
 
-        cc.eventManager.addListener(listenerCyan, spriteCyan);
-        cc.eventManager.addListener(listenerCyan.clone(), spriteMagenta);
-        cc.eventManager.addListener(listenerCyan.clone(), spriteYellow);
+        cc.eventManager.addListener(listenerPlayer, spritePlayer);
         var selfPointer = this;
+
+        var containerForSupport1 = new cc.Node();
+        var spriteSupport1 = new cc.Sprite(res.Img_Player_png);
+        spriteSupport1.setPosition(cc.p(origin.x + size.width / 4, origin.y + size.height / 2));
+//        spriteSupport1.setPosition(cc.p(100, 100));
+        spriteSupport1.setScale(0.125);
+        containerForSupport1.addChild(spriteSupport1);
+        this.addChild(containerForSupport1, 1);
+
+        cc.log(size.width);
+        cc.log(size.width / 4);
+
+        var controlPoints = [
+            cc.p(size.width / 4, size.height / 2),
+            cc.p(size.width / 2, size.height / 2 + size.height),
+            cc.p(size.width - size.width / 4, size.height / 2)
+        ];
+        var bezierForward = cc.bezierTo(1, controlPoints);
+        spriteSupport1.runAction(bezierForward);
+
+        // BezierBy(対象の座標から相対座標で移動)
+//        var controlPoints = [
+//            cc.p(0, 0),
+//            cc.p((size.width / 2), (size.height)),
+//            cc.p((size.width / 4), (size.height / 2))
+//        ];
+//        var bezierForward = cc.bezierBy(1, controlPoints);
+//        var repeat = cc.sequence(bezierForward, bezierForward.reverse()).repeatForever();
+//        spriteSupport1.runAction(repeat);
+
+//        // SpriteCyan
+//        var containerForSpriteCyan = new cc.Node();
+//        var spriteCyan = new cc.Sprite(res.Img_SquareCyan_png);
+//        spriteCyan.setPosition(origin.x + size.width / 2 - 80, origin.y + size.height / 2 + 80);
+//        containerForSpriteCyan.addChild(spriteCyan);
+//        this.addChild(containerForSpriteCyan, 10);
+//
+//        // SpriteMagenta
+//        var spriteMagenta = new cc.Sprite(res.Img_SquareMagenta_png);
+//        spriteMagenta.setPosition(origin.x + size.width / 2, origin.y + size.height / 2);
+//        this.addChild(spriteMagenta, 20);
+//
+//        // SpriteYellow
+//        var spriteYellow = new cc.Sprite(res.Img_SquareYellow_png);
+//        spriteYellow.setPosition(origin.x + size.width / 2 + 80, origin.y + size.height / 2 - 80);
+////        sprite2.addChild(spriteYellow, 1);
+//        this.addChild(spriteYellow, 1);
+//
+//        // Make spriteCyan touchable
+//        var listenerCyan = cc.EventListener.create({
+//            event: cc.EventListener.TOUCH_ONE_BY_ONE,
+//            swallowTouches: true,
+//            onTouchBegan: function (touch, event) {
+//                var target = event.getCurrentTarget();
+//
+//                var locationInNode = target.convertToNodeSpace(touch.getLocation());
+//                var s = target.getContentSize();
+//                var rect = cc.rect(0, 0, s.width, s.height);
+//
+//                if (cc.rectContainsPoint(rect, locationInNode)) {
+//                    cc.log("sprite began... x = " + locationInNode.x + ", y = " + locationInNode.y);
+//                    target.opacity = 180;
+//                    return true;
+//                }
+//                return false;
+//            },
+//            onTouchMoved: function (touch, event) {
+//                var target = event.getCurrentTarget();
+//                var delta = touch.getDelta();
+//                target.x += delta.x;
+//                target.y += delta.y;
+//            },
+//            onTouchEnded: function (touch, event) {
+//                var target = event.getCurrentTarget();
+//                cc.log("sprite onTouchesEnded.. ");
+//                target.setOpacity(255);
+//                if (target == spriteMagenta) {
+//                    containerForSpriteCyan.setLocalZOrder(100);
+//                } else if (target == spriteCyan) {
+//                    containerForSpriteCyan.setLocalZOrder(0);
+//                }
+//            }
+//        });
+//
+//        cc.eventManager.addListener(listenerCyan, spriteCyan);
+//        cc.eventManager.addListener(listenerCyan.clone(), spriteMagenta);
+//        cc.eventManager.addListener(listenerCyan.clone(), spriteYellow);
+//        var selfPointer = this;
 
 //        var removeAllTouchItem = new cc.MenuItemFont("Remove All Touch Listeners", function(senderItem){
 //            senderItem.setString("Only Next item could be clicked");

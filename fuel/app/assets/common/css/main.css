@@ -2163,7 +2163,7 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("/common/images/banner.jpg");
 			}
 
 			#main > section.two {
