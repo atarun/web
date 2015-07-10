@@ -15,7 +15,7 @@ nbproject/
 Thumbs.db
 desktop.ini
 
-logs/
+log/
 
 # the composer package lock file and install directory
 #/composer.lock
