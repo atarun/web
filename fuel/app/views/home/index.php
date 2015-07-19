@@ -95,8 +95,8 @@
 		</div>
 	</section>
 
-	<!-- Resume Section -->
-	<section id="resume" class="four">
+	<!-- Work -->
+	<section id="work" class="four">
 		<div class="container">
 			<header>
 				<h2>Work</h2>
