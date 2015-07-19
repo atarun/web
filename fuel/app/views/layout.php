@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-	<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-	<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-	<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+	<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="ja"> <![endif]-->
+	<!--[if IE 8 ]><html class="no-js ie ie8" lang="ja"> <![endif]-->
+	<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="ja"> <!--<![endif]-->
 	<head>
 		<!-- Basic Page Needs -->
 		<meta charset="utf-8">
@@ -20,15 +20,6 @@
 		<link rel="stylesheet" href="/common/css/layout.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="/common/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/common/css/ie9.css" /><![endif]-->
-		
-		<!-- CSS -->
-<!-- 		<link rel="stylesheet" href="/common/css/default.css"> -->
-<!-- 		<link rel="stylesheet" href="/common/css/layout.css"> -->
-<!-- 		<link rel="stylesheet" href="/common/css/media-queries.css"> -->
-<!-- 		<link rel="stylesheet" href="/common/css/magnific-popup.css"> -->
-		
-		<!-- Script -->
-<!-- 		<script src="/common/js/modernizr.js"></script> -->
 		
 		<!-- Favicons -->
 <!-- 		<link rel="shortcut icon" href="/common/favicon.png" > -->
@@ -58,7 +49,8 @@
 						<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 						<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 						<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-						<li><a href="#work" id="work-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Work</span></a></li>
+						<li><a href="#skill" id="skill-link" class="skel-layers-ignoreHref"><span class="icon fa-wrench">Skill</span></a></li>
+						<li><a href="#work" id="work-link" class="skel-layers-ignoreHref"><span class="icon fa-laptop">Work</span></a></li>
 						<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 					</ul>
 				</nav>
@@ -67,9 +59,9 @@
 			<div class="bottom">
 				<!-- Social Icons -->
 				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://twitter.com/atarun0896" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/ataru.sugita" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://github.com/atarun" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 				</ul>

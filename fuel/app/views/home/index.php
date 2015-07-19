@@ -5,10 +5,9 @@
 	<section id="top" class="one dark cover">
 		<div class="container">
 			<header>
-				<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-				site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-				<p>Ligula scelerisque justo sem accumsan diam quis<br />
-				vitae natoque dictum sollicitudin elementum.</p>
+				<h2 class="alt">Hi! My name is <strong>ATARUN</strong>,<br />
+				My profession is a <strong>SystemEngineer</strong>.</h2>
+				<p>I'm japanese !!!!</p>
 			</header>
 			<footer>
 				<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
@@ -95,11 +94,16 @@
 		</div>
 	</section>
 
+<<<<<<< HEAD
 	<!-- Work -->
 	<section id="work" class="four">
+=======
+	<!-- Skill -->
+	<section id="skill" class="four">
+>>>>>>> b3a2bfaea0300afebadec98c51c0889abb0f2dcd
 		<div class="container">
 			<header>
-				<h2>Work</h2>
+				<h2>Skill</h2>
 			</header>
 			
 			<div class="nine columns main-col">
@@ -109,21 +113,39 @@
 				voluptatem sequi nesciunt.
 				</p>
 				<div class="bars">
-					<ul class="skills">
-						<li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-						<li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-						<li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
+					<dl class="skills">
+						<dt><span class="bar-expand html"></span><em>HTML</em></dt>
+						<dd>HTML5</dd>
+						<dt><span class="bar-expand css"></span><em>CSS</em></dt>
+						<dd>CSS3</dd>
+						<dt><span class="bar-expand javascript"></span><em>JavaScript</em></dt>
+						<dd>jQuery</dd>
+						<dt><span class="bar-expand php"></span><em>PHP</em></dt>
+						<dd>FuelPHP,&nbspCake&nbspPHP,&nbspZend&nbspFramework</dd>
+						<dt><span class="bar-expand ios"></span><em>iOS</em></dt>
+						<dd>Objective-C</dd>
+					</dl>
 				</div>
 			</div>
 		</div>
 	</section>
 	
+	<!-- Work -->
+	<section id="work" class="five">
+		<div class="container">
+			<header>
+				<h2>Work</h2>
+			</header>
+			
+			<dl>
+				<dt>Cocos2d-JS</dt>
+				<dd><a href="/dev/Cocos2dJS/HelloWorld/" target="__blank">HelloWorld</a></dd>
+			</dl>
+		</div>
+	</section>
+	
 	<!-- Contact -->
-	<section id="contact" class="five">
+	<section id="contact" class="nine">
 			<header>
 				<h2><span>Contact</span></h2>
 			</header>

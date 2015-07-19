@@ -12,21 +12,24 @@
   	margin-top: 36px;
    list-style: none;
 }
-.bars li {
+.bars dt {
    position: relative;
-  	margin-bottom: 60px;
+   margin-top: 60px;
   	background: #ccc;
   	height: 42px;
   	border-radius: 3px;
 }
-.bars li em {
+.bars dt em {
 	font: 15px 'opensans-bold', sans-serif;
    color: #313131;
-	text-transform: uppercase;
+/* 	text-transform: uppercase; */
    letter-spacing: 2px;
 	font-weight: normal;
    position: relative;
 	top: -36px;
+}
+.bars dd {
+  	margin-bottom: 60px;
 }
 .bar-expand {
    position: absolute;
@@ -41,84 +44,70 @@
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
-}
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.html {
+  	width: 75%;
+  	-moz-animation: html 2s ease;
+  	-webkit-animation: html 2s ease;
 }
 .css {
-  	width: 90%;
+  	width: 65%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.javascript {
+  	width: 70%;
+  	-moz-animation: javascript 2s ease;
+  	-webkit-animation: javascript 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.php {
+  	width: 80%;
+  	-moz-animation: php 2s ease;
+  	-webkit-animation: php 2s ease;
+}
+.ios {
+  	width: 30%;
+  	-moz-animation: ios 2s ease;
+  	-webkit-animation: ios 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes html {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 65%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes javascript {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-moz-keyframes php {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes ios {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 30%;  }
 }
 
-@-webkit-keyframes photoshop {
+@-webkit-keyframes html {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 75%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 65%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes javascript {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes php {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes ios {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 30%;  }
 }

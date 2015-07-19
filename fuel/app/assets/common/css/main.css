@@ -2084,7 +2084,7 @@
 		}
 
 			#nav ul li a.active span:before {
-				color: #e27689;
+				color: #ff0000;
 			}
 
 /* Footer */
@@ -2163,7 +2163,7 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("/common/images/banner.jpg");
 			}
 
 			#main > section.two {
@@ -2176,6 +2176,14 @@
 
 			#main > section.four {
 				background-color: #e8edec;
+			}
+			
+			#main > section.five {
+				background-color: #eaeaea;
+			}
+			
+			#main > section.nine {
+				background-color: #c0c0c0;
 			}
 
 /* Wide */
