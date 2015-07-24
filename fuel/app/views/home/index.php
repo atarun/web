@@ -93,14 +93,9 @@
 
 		</div>
 	</section>
-
-<<<<<<< HEAD
-	<!-- Work -->
-	<section id="work" class="four">
-=======
+	
 	<!-- Skill -->
 	<section id="skill" class="four">
->>>>>>> b3a2bfaea0300afebadec98c51c0889abb0f2dcd
 		<div class="container">
 			<header>
 				<h2>Skill</h2>
