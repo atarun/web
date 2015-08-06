@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25c6407e8f457bf0c6e6cc4480ff4a33",
+    "hash": "43b7abd0fab0d9618b507ae385f6f8cd",
     "packages": [
         {
             "name": "composer/installers",
@@ -142,12 +142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fuel/core.git",
-                "reference": "e8c221af4cb685aefef20cc50a70f369eb37cb95"
+                "reference": "f614b30e1f76389580c2d97991ab3f25c1533a29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fuel/core/zipball/e8c221af4cb685aefef20cc50a70f369eb37cb95",
-                "reference": "e8c221af4cb685aefef20cc50a70f369eb37cb95",
+                "url": "https://api.github.com/repos/fuel/core/zipball/f614b30e1f76389580c2d97991ab3f25c1533a29",
+                "reference": "f614b30e1f76389580c2d97991ab3f25c1533a29",
                 "shasum": ""
             },
             "require": {
@@ -169,7 +169,7 @@
                 "source": "https://github.com/fuel/core/tree/1.7/master",
                 "issues": "https://github.com/fuel/core/issues"
             },
-            "time": "2015-05-20 14:40:13"
+            "time": "2015-06-23 06:38:57"
         },
         {
             "name": "fuel/docs",
@@ -392,6 +392,48 @@
             "time": "2014-07-17 21:15:12"
         },
         {
+            "name": "google/apiclient",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google/google-api-php-client.git",
+                "reference": "2adb5ba90612858d4add0342eee6b8b9aaca398d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/2adb5ba90612858d4add0342eee6b8b9aaca398d",
+                "reference": "2adb5ba90612858d4add0342eee6b8b9aaca398d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Client library for Google APIs",
+            "homepage": "http://developers.google.com/api-client-library/php",
+            "keywords": [
+                "google"
+            ],
+            "time": "2015-05-21 19:35:32"
+        },
+        {
             "name": "michelf/php-markdown",
             "version": "1.4.0",
             "source": {
@@ -505,6 +547,39 @@
             "time": "2013-04-23 10:09:48"
         },
         {
+            "name": "mp-php/fuel-packages-gdata",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mamor/fuel-packages-gdata.git",
+                "reference": "e1e22ecbc7de42f8e49570af0c06c7fe4acb72a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mamor/fuel-packages-gdata/zipball/e1e22ecbc7de42f8e49570af0c06c7fe4acb72a7",
+                "reference": "e1e22ecbc7de42f8e49570af0c06c7fe4acb72a7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "google/apiclient": "1.*@dev"
+            },
+            "type": "fuel-package",
+            "extra": {
+                "installer-name": "gdata"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mamoru Otsuka"
+                }
+            ],
+            "time": "2014-02-19 13:36:18"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -553,7 +628,8 @@
         "fuel/email": 20,
         "fuel/oil": 20,
         "fuel/orm": 20,
-        "fuel/parser": 20
+        "fuel/parser": 20,
+        "mp-php/fuel-packages-gdata": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

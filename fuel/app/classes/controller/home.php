@@ -12,8 +12,5 @@ class Controller_Home extends Controller_Abstruct
 	}
 	
 	public function action_index() {
-		$this->template->content = View::forge('home/index');
-// 		var_dump("hoge");
-// 		return Response::forge(View::forge('home/index'));
 	}
 }

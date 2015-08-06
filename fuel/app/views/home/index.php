@@ -16,7 +16,7 @@
 	</section>
 
 	<!-- Portfolio -->
-	<section id="portfolio" class="two">
+<!--	<section id="portfolio" class="two">
 		<div class="container">
 			<header>
 				<h2>Portfolio</h2>
@@ -72,7 +72,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- About Me -->
 	<section id="about" class="three">

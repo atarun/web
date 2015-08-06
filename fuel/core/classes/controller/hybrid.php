@@ -21,7 +21,7 @@ namespace Fuel\Core;
  * @category  Core
  * @author    Fuel Development Team
  */
-abstract class Controller_Hybrid extends \Controller_Rest
+abstract class Controller_Hybrid extends Controller_Rest
 {
 	/**
 	* @var string page template

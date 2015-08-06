@@ -5,7 +5,7 @@
 	<head>
 		<!-- Basic Page Needs -->
 		<meta charset="utf-8">
-		<title><? echo $title; ?></title>
+		<title><?= $title; ?></title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
@@ -13,8 +13,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- JavaScript -->
+		<script src="/common/js/jquery.min.js"></script>
 		<!--[if lte IE 8]><script src="/common/js/ie/html5shiv.js"></script><![endif]-->
-		
 		<!-- CSS -->
 		<link rel="stylesheet" href="/common/css/main.css" />
 		<link rel="stylesheet" href="/common/css/layout.css" />
@@ -46,12 +46,13 @@
 						   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 					-->
 					<ul>
-						<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-						<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-						<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-						<li><a href="#skill" id="skill-link" class="skel-layers-ignoreHref"><span class="icon fa-wrench">Skill</span></a></li>
-						<li><a href="#work" id="work-link" class="skel-layers-ignoreHref"><span class="icon fa-laptop">Work</span></a></li>
-						<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+						<li><a href="<?php if ($uri != 'home/index') { ?>/home<?php } ?>#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Top</span></a></li>
+<!-- 						<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li> -->
+						<li><a href="<?php if ($uri != 'home/index') { ?>/home<?php } ?>#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+						<li><a href="<?php if ($uri != 'home/index') { ?>/home<?php } ?>#skill" id="skill-link" class="skel-layers-ignoreHref"><span class="icon fa-wrench">Skill</span></a></li>
+						<li><a href="<?php if ($uri != 'home/index') { ?>/home<?php } ?>#work" id="work-link" class="skel-layers-ignoreHref"><span class="icon fa-laptop">Work</span></a></li>
+						<li><a href="<?php if ($uri != 'home/index') { ?>/home<?php } ?>#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+						<li><a href="/tv" id="tv-link" class="skel-layers-ignoreHref"><span class="icon fa-video-camera">TV</span></a></li>
 					</ul>
 				</nav>
 			</div>
